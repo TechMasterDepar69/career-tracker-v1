@@ -1,4 +1,4 @@
-# 🚀 Career Analytics Dashboard (Full Stack)
+![Dashboard](https://github.com/user-attachments/assets/9a7747c8-a499-465f-9c6f-939f4ff36691)# 🚀 Career Analytics Dashboard (Full Stack)
 
 A data-driven job application tracker designed to help job seekers manage their pipeline and analyze performance metrics. This application replaces spreadsheet chaos with a structured database and real-time visualization.
 
@@ -25,10 +25,14 @@ A data-driven job application tracker designed to help job seekers manage their 
 
 ---
 
+## 📸 Screenshots
+
 > **Dashboard View**
+> ![Dashboard](https://github.com/user-attachments/assets/35c81795-4b19-4fba-b68d-f4bfd93be7bc)
 > *Shows the stats and the "Add Job" interface.*
 
 > **Analytics View**
+> ![Analytics](https://github.com/user-attachments/assets/dca9d376-63d5-46b1-aff5-c8b297c63082)
 > *Shows the Donut Chart and Success Rate metrics.*
 
 ---

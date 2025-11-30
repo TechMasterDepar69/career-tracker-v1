@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Career Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Job Application Tracker</h1>
+
+            <button onclick="exportToCSV()" style="margin-bottom: 10px; cursor: pointer;">
+                📥 Export to Excel
+            </button>
+
+            <div class="dashboard-grid">
+                <div class="stat-box">
+                    <h3>Total</h3>
+                    <p id="stat-total">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Interview</h3>
+                    <p id="stat-interviews">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Success Rate</h3>
+                    <p id="stat-rate">0%</p>
+                </div>
+
+                <div class="stat-box" style="flex: 2">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Add New Job</h2>
+            <form id="job-form">
+                <div class="form-group">
+                    <input type="text" id="company" placeholder="Company Name (e.g. Google)" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="position" placeholder="Position (e.g. Data Analyst)" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="salary" placeholder="Salary Expectation">
+                </div>
+                <div class="form-group">
+                    <select id="status">
+                        <option value="Applied">Applied</option>
+                        <option value="Interviewing">Interviewing</option>
+                        <option value="Offer">Offer</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Save Job</button>
+            </form>
+        </section>
+
+        <section id="job-list">
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

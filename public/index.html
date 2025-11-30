@@ -14,29 +14,28 @@
         <header>
             <h1>🚀 Job Application Tracker</h1>
 
-            <button onclick="exportToCSV()" style="margin-bottom: 10px; cursor: pointer;">
+            <button onclick="exportToCSV()"
+                style="margin-top: 15px; margin-bottom: 20px; cursor: pointer; padding: 8px 15px;">
                 📥 Export to Excel
             </button>
 
-            <div class="dashboard-grid">
+            <div class="stats-row">
                 <div class="stat-box">
                     <h3>Total</h3>
                     <p id="stat-total">0</p>
                 </div>
-
                 <div class="stat-box">
-                    <h3>Interview</h3>
+                    <h3>Interviews</h3>
                     <p id="stat-interviews">0</p>
                 </div>
-
                 <div class="stat-box">
                     <h3>Success Rate</h3>
                     <p id="stat-rate">0%</p>
                 </div>
+            </div>
 
-                <div class="stat-box" style="flex: 2">
-                    <canvas id="myChart"></canvas>
-                </div>
+            <div class="chart-row">
+                <canvas id="myChart"></canvas>
             </div>
         </header>
 

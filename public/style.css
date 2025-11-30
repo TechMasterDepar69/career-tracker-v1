@@ -74,13 +74,7 @@ select {
     color: #555;
 }
 
-/* Dashboard Grid */
-.dashboard-grid {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-
+/* Statistics Section */
 .stat-box {
     background: white;
     padding: 15px;
@@ -153,4 +147,28 @@ select {
 .status-select.rejected {
     color: #dc3545;
     border-color: #dc3545;
+}
+
+/* ROW 1: Stats */
+.stats-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* Space between numbers and chart */
+}
+
+/* ROW 2: Chart Container */
+.chart-row {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    /* Force the chart to be a specific height */
+    width: 100%;
+}
+
+/* Ensure the canvas fits inside the box */
+canvas {
+    max-height: 100%;
 }
